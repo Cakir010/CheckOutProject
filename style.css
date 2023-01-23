@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(149, 154, 149);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul,
+  li {
+    list-style-type: none;
+  }
+  
+  .list__container {
+    background-color: #efefe7;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 9px;
+  }
+  
+  img {
+    height: 200px;
+    border-radius: 20px;
+  }
+  
+  .product {
+    display: flex;
+    margin: 1rem;
+    background-color: rgba(158, 159, 131, 0.693);
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .list__container:hover {
+    box-shadow: 5px 20px 50px;
+    transition: 2s;
+  
+    animation: perspective 1s;
+    word-break: break-all;
+    cursor: pointer;
+    /* transform: perspective(400px) rotateX(5deg) rotateY(-5deg) rotateZ(1deg); */
+  }
+  .price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    gap: 0.25rem;
+  }
+  
+  .gold {
+    color: #e0a56c;
+  }
+  
+  .dead {
+    text-decoration: line-through;
+  }
+  
+  .quantityBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background-color: #bd5a5a;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .remove {
+    background-color: #bd5a5a;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .price__list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid black;
+    margin: 1rem 4rem 0;
+  }
+  
+  @keyframes perspective {
+    0% {
+      opacity: 0;
+      transform: rotateY(-15deg);
+    }
+    26% {
+      transform: rotateX(25deg);
+    }
+    74% {
+      transform: rotateY(-10deg);
+    }
+    100% {
+      transform: rotateX(20deg);
+    }
+  }
+  
